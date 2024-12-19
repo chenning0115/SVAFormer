@@ -1,0 +1,31 @@
+{
+    "data": {
+        "data_sign": "Honghu",
+        "data_file": "Honghu_10",
+        "patch_size": 25,
+        "serve_patch_size": 25,
+        "batch_size": 32,
+        "num_classes": 22,
+        "pca": 30,
+        "dim_heads": 64,
+        "spectral_size": 30,
+        "random_rotate": false
+    },
+    "net": {
+        "trainer": "transformer",
+        "use_mask": true,
+        "mlp_head_dim": 64,
+        "depth": 3,
+        "dim": 64,
+        "heads": 20,
+        "kernal": 3,
+        "padding": 1,
+        "mask_pct": 100
+    },
+    "train": {
+        "epochs": 50,
+        "lr": 0.001,
+        "weight_decay": 0
+    },
+    "uniq_name": "wh"
+}

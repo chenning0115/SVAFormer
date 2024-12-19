@@ -1,0 +1,34 @@
+{
+    "data": {
+        "data_sign": "Salinas",
+        "data_file": "Salinas_10",
+        "patch_size": 23,
+        "serve_patch_size": 17,
+        "batch_size": 32,
+        "num_classes": 16,
+        "pca": 104,
+        "dim_heads": 64,
+        "spectral_size": 104,
+        "random_rotate": false
+    },
+    "net": {
+        "trainer": "transformer",
+        "use_mask": true,
+        "mlp_dim": 8,
+        "depth": 3,
+        "dim": 64,
+        "heads": 20,
+        "kernal": 3,
+        "padding": 1,
+        "task_num":3,
+        "expert_num":1,
+        "task_label_list":[[1,2,3],[9,10,11]],
+        "task_weight":[1,0,0]
+    },
+    "train": {
+        "epochs": 50,
+        "lr": 0.001,
+        "weight_decay": 0
+    },
+    "uniq_name": "Salinas_test"
+}
